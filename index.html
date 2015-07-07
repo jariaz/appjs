@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Joseph's Test App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="app.min.css">
+    <style type="text/css">
+        /*
+          Adding in some quick and dirty styling just to get a POC
+        */
+
+        .choice-button .app-list li {
+            text-align: center;
+        }
+
+        .custom-label.app-section {
+            background: none;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+            border-bottom: none;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<!-- Page 1 -->
+<div class="app-page" data-page="home">
+    <div class="app-topbar teal">
+        <div class="app-title">Start Here! - Landing Page 1 - App.js</div>
+    </div>
+    <div class="app-content">
+        <div class="app-section custom-label">
+            <label>Desired Coverage Level:</label>
+        </div>
+        <div class="app-section choice-button">
+            <ul class="app-list">
+                <li class="app-button" data-target="page2">Superior</li>
+                <li class="app-button" data-target="page2">Standard</li>
+                <li class="app-button" data-target="page2">Basic</li>
+                <li class="app-button" data-target="page2">State Minimum</li>
+            </ul>
+        </div>
+        <div class="app-button teal" data-target="page2">Tap to get FREE results!</div>
+    </div>
+</div>
+
+<!-- Page 2 -->
+<div class="app-page" data-page="page2">
+    <div class="app-topbar teal">
+        <div class="app-button left" data-back data-autotitle>Go Back</div>
+        <div class="app-title">Page 2</div>
+    </div>
+    <div class="app-content">
+        <div class="app-section custom-label">
+            <label>Type of coverage I want:</label>
+        </div>
+        <div class="app-section choice-button">
+            <ul class="app-list">
+                <li class="app-button" data-target="page3">Full Coverage</li>
+                <li class="app-button" data-target="page3">Liability Only</li>
+            </ul>
+        </div>
+        <div class="app-button teal" data-target="page3">Tap Here</div>
+    </div>
+</div>
+
+<!-- Page 3 -->
+<div class="app-page" data-page="page3">
+    <div class="app-topbar teal">
+        <div class="app-button left" data-back data-autotitle>Go Back</div>
+        <div class="app-title">Page 3</div>
+    </div>
+    <div class="app-content">
+        <div class="app-section custom-label">
+            <label>When does your current policy expire?</label>
+        </div>
+        <div class="app-section choice-button">
+            <ul class="app-list">
+                <li class="app-button" data-target="page4">3-6 months </li>
+                <li class="app-button" data-target="page4">6-12 months</li>
+                <li class="app-button" data-target="page4">1 year or more </li>
+                <li class="app-button" data-target="page4">Currently uninsured </li>
+            </ul>
+        </div>
+        <div class="app-button teal" data-target="page4">Tap Here</div>
+    </div>
+</div>
+
+<!-- Page 4 -->
+<div class="app-page" data-page="page4">
+    <div class="app-topbar teal">
+        <div class="app-button left" data-back data-autotitle>Go Back</div>
+        <div class="app-title">Page 4</div>
+    </div>
+    <div class="app-content">
+        <div class="app-section custom-label">
+            <label>Do you require an SR-22?</label>
+        </div>
+        <div class="app-section choice-button">
+            <ul class="app-list">
+                <li class="app-button" data-target="page5">No</li>
+                <li class="app-button" data-target="page5">Yes</li>
+            </ul>
+        </div>
+        <div class="app-button teal" data-target="page5">Tap Here</div>
+    </div>
+</div>
+
+<!-- Page 5 -->
+<div class="app-page" data-page="page5">
+    <div class="app-topbar teal">
+        <div class="app-button left" data-back data-autotitle>Go Back</div>
+        <div class="app-title">Page 5</div>
+    </div>
+    <div class="app-content">
+        <div class="app-section custom-label">
+            <label>Please select the year of your vehicle:</label>
+        </div>
+
+        <div class="app-section">
+            <select class="app-input">
+                <option value="">Please Choose...</option>
+                <option value="2012">2012</option>
+            </select>
+        </div>
+        <div class="app-button teal" data-target="page6">Tap Here</div>
+    </div>
+</div>
+
+<!-- Page 6 -->
+<div class="app-page" data-page="page6">
+    <div class="app-topbar teal">
+        <div class="app-button left" data-back data-autotitle>Go Back</div>
+        <div class="app-title">Page 6</div>
+    </div>
+    <div class="app-content">
+        <div class="app-section custom-label">
+            <label>Please select the make of your vehicle:</label>
+        </div>
+        <div class="app-section">
+            <select class="app-input">
+                <option value="">Please Choose...</option>
+                <option value="bmw">Bmw</option>
+            </select>
+        </div>
+        <div class="app-button teal" data-target="page7">Tap Here</div>
+    </div>
+</div>
+
+<!-- Page 7 -->
+<div class="app-page" data-page="page7">
+    <div class="app-topbar teal">
+        <div class="app-button left" data-back data-autotitle>Go Back</div>
+        <div class="app-title">Page 7</div>
+    </div>
+    <div class="app-content">
+        <div class="app-section"><input class="app-input" placeholder="First Name"></div>
+        <div class="app-section"><input class="app-input" placeholder="Last Name"></div>
+        <div class="app-section"><input class="app-input" placeholder="Address"></div>
+        <div class="app-section"><input class="app-input" placeholder="Email Address"></div>
+
+        <div class="app-button teal" data-target="page3">Tap to get FREE results!</div>
+    </div>
+</div>
+
+<script src="jquery-2.1.4.js"></script>
+<script src="app.min.js"></script>
+<script>
+    App.controller('home', function (page) {
+        console.log('home controller loaded');
+    });
+
+    App.controller('page2', function (page) {
+        //console.log('page2 controller loaded');
+    });
+
+    try {
+        App.restore();
+    } catch (err) {
+        App.load('home');
+    }
+</script>
+</body>
+</html>
