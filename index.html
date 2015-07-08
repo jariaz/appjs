@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <title>Joseph's Test App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
@@ -25,162 +25,243 @@
 
 <body>
 
-<!-- Page 1 -->
-<div class="app-page" data-page="home">
-    <div class="app-topbar teal">
-        <div class="app-title">Start Here! - Landing Page 1 - App.js</div>
-    </div>
-    <div class="app-content">
-        <div class="app-section custom-label">
-            <label>Desired Coverage Level:</label>
+    <!-- Page 1 -->
+    <form id="myform">
+    <div class="app-page" data-page="page1">
+        <div class="app-topbar teal">
+            <div class="app-title">Start Here! - Landing Page 1 - App.js</div>
         </div>
-        <div class="app-section choice-button">
-            <ul class="app-list">
-                <li class="app-button" data-target="page2">Superior</li>
-                <li class="app-button" data-target="page2">Standard</li>
-                <li class="app-button" data-target="page2">Basic</li>
-                <li class="app-button" data-target="page2">State Minimum</li>
-            </ul>
+        <div class="app-content">
+            <div class="app-section custom-label">
+                <label>Desired Coverage Level:</label>
+            </div>
+            <div class="app-section choice-button">
+                <ul class="app-list" data-name="desiredcoveragelevel">
+                    <li class="app-button" data-target="page2" data-value="Superior">Superior</li>
+                    <li class="app-button" data-target="page2" data-value="Standard">Standard</li>
+                    <li class="app-button" data-target="page2" data-value="Basic">Basic</li>
+                    <li class="app-button" data-target="page2" data-value="State Minimum">State Minimum</li>
+                </ul>
+            </div>
+            <div class="app-button teal valid-btn" data-target="page2">Tap to get FREE results!</div>
         </div>
-        <div class="app-button teal" data-target="page2">Tap to get FREE results!</div>
     </div>
-</div>
 
-<!-- Page 2 -->
-<div class="app-page" data-page="page2">
-    <div class="app-topbar teal">
-        <div class="app-button left" data-back data-autotitle>Go Back</div>
-        <div class="app-title">Page 2</div>
-    </div>
-    <div class="app-content">
-        <div class="app-section custom-label">
-            <label>Type of coverage I want:</label>
+    <!-- Page 2 -->
+    <div class="app-page" data-page="page2">
+        <div class="app-topbar teal">
+            <div class="app-button left" data-back data-autotitle>Go Back</div>
+            <div class="app-title">Page 2</div>
         </div>
-        <div class="app-section choice-button">
-            <ul class="app-list">
-                <li class="app-button" data-target="page3">Full Coverage</li>
-                <li class="app-button" data-target="page3">Liability Only</li>
-            </ul>
+        <div class="app-content">
+            <div class="app-section custom-label">
+                <label>Type of coverage I want:</label>
+            </div>
+            <div class="app-section choice-button">
+                <ul class="app-list">
+                    <li class="app-button" data-target="page3">Full Coverage</li>
+                    <li class="app-button" data-target="page3">Liability Only</li>
+                </ul>
+            </div>
+            <div class="app-button teal valid-btn" data-target="page3">Tap Here</div>
         </div>
-        <div class="app-button teal" data-target="page3">Tap Here</div>
     </div>
-</div>
 
-<!-- Page 3 -->
-<div class="app-page" data-page="page3">
-    <div class="app-topbar teal">
-        <div class="app-button left" data-back data-autotitle>Go Back</div>
-        <div class="app-title">Page 3</div>
-    </div>
-    <div class="app-content">
-        <div class="app-section custom-label">
-            <label>When does your current policy expire?</label>
+    <!-- Page 3 -->
+    <div class="app-page" data-page="page3">
+        <div class="app-topbar teal">
+            <div class="app-button left" data-back data-autotitle>Go Back</div>
+            <div class="app-title">Page 3</div>
         </div>
-        <div class="app-section choice-button">
-            <ul class="app-list">
-                <li class="app-button" data-target="page4">3-6 months </li>
-                <li class="app-button" data-target="page4">6-12 months</li>
-                <li class="app-button" data-target="page4">1 year or more </li>
-                <li class="app-button" data-target="page4">Currently uninsured </li>
-            </ul>
+        <div class="app-content">
+            <div class="app-section custom-label">
+                <label>When does your current policy expire?</label>
+            </div>
+            <div class="app-section choice-button">
+                <ul class="app-list">
+                    <li class="app-button" data-target="page4">3-6 months </li>
+                    <li class="app-button" data-target="page4">6-12 months</li>
+                    <li class="app-button" data-target="page4">1 year or more </li>
+                    <li class="app-button" data-target="page4">Currently uninsured </li>
+                </ul>
+            </div>
+            <div class="app-button teal" data-target="page4">Tap Here</div>
         </div>
-        <div class="app-button teal" data-target="page4">Tap Here</div>
     </div>
-</div>
 
-<!-- Page 4 -->
-<div class="app-page" data-page="page4">
-    <div class="app-topbar teal">
-        <div class="app-button left" data-back data-autotitle>Go Back</div>
-        <div class="app-title">Page 4</div>
-    </div>
-    <div class="app-content">
-        <div class="app-section custom-label">
-            <label>Do you require an SR-22?</label>
+    <!-- Page 4 -->
+    <div class="app-page" data-page="page4">
+        <div class="app-topbar teal">
+            <div class="app-button left" data-back data-autotitle>Go Back</div>
+            <div class="app-title">Page 4</div>
         </div>
-        <div class="app-section choice-button">
-            <ul class="app-list">
-                <li class="app-button" data-target="page5">No</li>
-                <li class="app-button" data-target="page5">Yes</li>
-            </ul>
+        <div class="app-content">
+            <div class="app-section custom-label">
+                <label>Do you require an SR-22?</label>
+            </div>
+            <div class="app-section choice-button">
+                <ul class="app-list">
+                    <li class="app-button" data-target="page5">No</li>
+                    <li class="app-button" data-target="page5">Yes</li>
+                </ul>
+            </div>
+            <div class="app-button teal" data-target="page5">Tap Here</div>
         </div>
-        <div class="app-button teal" data-target="page5">Tap Here</div>
     </div>
-</div>
 
-<!-- Page 5 -->
-<div class="app-page" data-page="page5">
-    <div class="app-topbar teal">
-        <div class="app-button left" data-back data-autotitle>Go Back</div>
-        <div class="app-title">Page 5</div>
-    </div>
-    <div class="app-content">
-        <div class="app-section custom-label">
-            <label>Please select the year of your vehicle:</label>
+    <!-- Page 5 -->
+    <div class="app-page" data-page="page5">
+        <div class="app-topbar teal">
+            <div class="app-button left" data-back data-autotitle>Go Back</div>
+            <div class="app-title">Page 5</div>
         </div>
+        <div class="app-content">
+            <div class="app-section custom-label">
+                <label>Please select the year of your vehicle:</label>
+            </div>
 
-        <div class="app-section">
-            <select class="app-input">
-                <option value="">Please Choose...</option>
-                <option value="2012">2012</option>
-            </select>
+            <div class="app-section">
+                <select class="app-input">
+                    <option value="">Please Choose...</option>
+                    <option value="2012">2012</option>
+                </select>
+            </div>
+            <div class="app-button teal" data-target="page6">Tap Here</div>
         </div>
-        <div class="app-button teal" data-target="page6">Tap Here</div>
     </div>
-</div>
 
-<!-- Page 6 -->
-<div class="app-page" data-page="page6">
-    <div class="app-topbar teal">
-        <div class="app-button left" data-back data-autotitle>Go Back</div>
-        <div class="app-title">Page 6</div>
-    </div>
-    <div class="app-content">
-        <div class="app-section custom-label">
-            <label>Please select the make of your vehicle:</label>
+    <!-- Page 6 -->
+    <div class="app-page" data-page="page6">
+        <div class="app-topbar teal">
+            <div class="app-button left" data-back data-autotitle>Go Back</div>
+            <div class="app-title">Page 6</div>
         </div>
-        <div class="app-section">
-            <select class="app-input">
-                <option value="">Please Choose...</option>
-                <option value="bmw">Bmw</option>
-            </select>
+        <div class="app-content">
+            <div class="app-section custom-label">
+                <label>Please select the make of your vehicle:</label>
+            </div>
+            <div class="app-section">
+                <select class="app-input">
+                    <option value="">Please Choose...</option>
+                    <option value="bmw">Bmw</option>
+                </select>
+            </div>
+            <div class="app-button teal" data-target="page7">Tap Here</div>
         </div>
-        <div class="app-button teal" data-target="page7">Tap Here</div>
     </div>
-</div>
 
-<!-- Page 7 -->
-<div class="app-page" data-page="page7">
-    <div class="app-topbar teal">
-        <div class="app-button left" data-back data-autotitle>Go Back</div>
-        <div class="app-title">Page 7</div>
-    </div>
-    <div class="app-content">
-        <div class="app-section"><input class="app-input" placeholder="First Name"></div>
-        <div class="app-section"><input class="app-input" placeholder="Last Name"></div>
-        <div class="app-section"><input class="app-input" placeholder="Address"></div>
-        <div class="app-section"><input class="app-input" placeholder="Email Address"></div>
+    <!-- Page 7 -->
+    <div class="app-page" data-page="page7">
+        <div class="app-topbar teal">
+            <div class="app-button left" data-back data-autotitle>Go Back</div>
+            <div class="app-title">Page 7</div>
+        </div>
+        <div class="app-content">
+            <div class="app-section"><input class="app-input" placeholder="First Name"></div>
+            <div class="app-section"><input class="app-input" placeholder="Last Name"></div>
+            <div class="app-section"><input class="app-input" placeholder="Address"></div>
+            <div class="app-section"><input class="app-input" placeholder="Email Address"></div>
 
-        <div class="app-button teal" data-target="page3">Tap to get FREE results!</div>
+            <div class="app-button teal" data-target="page3">Tap to get FREE results!</div>
+        </div>
     </div>
-</div>
+</form>
 
 <script src="jquery-2.1.4.js"></script>
+<script src="jquery.validate.js"></script>
+<script src="additional-methods.js"></script>
 <script src="app.min.js"></script>
 <script>
-    App.controller('home', function (page) {
-        console.log('home controller loaded');
-    });
 
-    App.controller('page2', function (page) {
-        //console.log('page2 controller loaded');
+    /*
+    jQuery.validator.setDefaults({
+        debug: true,
+        success: "valid"
     });
+    */
 
-    try {
-        App.restore();
-    } catch (err) {
-        App.load('home');
+    /*
+    var form = $( "#myform" );
+    form.validate();
+    $( ".valid-btn" ).click(function() {
+        alert( "Valid: " + form.valid() );
+        console.log('test');
+    });
+    */
+
+    function testValidate(page, val, name) {
+        /*
+            Testing validation, trying to think of the best way to organize all this, so I started breaking some common
+            functions out.  I'm not sure I need an individual controller for each 'page', so trying to figure out how
+            to organize everything is going to be exciting.
+        */
+
+        console.log('testValidate fired ->', val);
+        createInput(val,name);
     }
+
+    function createInput(val, name) {
+        /*
+            Just created this to add in the values of the fields that have been selected in the previous page.  One of
+            the things I noticed is the framework completely rips out the form tags, so this might be temporary.
+            Eventually once a user is finished with the form, they could just submit the data that resides in the form
+            tags at the top of the page.
+        */
+
+        $('<input>').attr({
+            type: 'hidden',
+            id: name,
+            name: name,
+            value: val
+        }).appendTo('#myform');
+    }
+
+App.controller('page1', function (page) {
+
+    //Testing validation on choice 'buttons'
+    $(page).find('.app-list li').on('click', function () {
+        var val = $(this).attr('data-value'),
+            name = $(this).parent().attr('data-name');
+
+        //Testing validation
+        testValidate(page, val, name);
+    });
+
+    $(page).find('.valid-btn').on('click', function () {
+        var email = $('#btnEmail').val();
+        var email = 'tets';
+
+        if (email & password) {
+            // on successful validation create the user
+            auth.createUser(email, password, function (error, user) {
+                if (!error) {
+                    // App.load('SignIn');
+                }
+            });
+        } else {
+            // on validation failure show the validation message
+            App.dialog({
+                title: 'Validation Error',
+                text: 'Please enter a valid' + email,
+                okButton: 'Try Again'
+                //,cancelButton: 'Cancel'
+            }, function (tryAgain) {
+                if (tryAgain) {
+                    App.load('page1');
+                }
+            });
+        }
+    });
+
+});
+
+try {
+    App.restore();
+} catch (err) {
+    App.load('page1');
+    onReady();
+
+}
 </script>
 </body>
 </html>
